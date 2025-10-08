@@ -1,0 +1,241 @@
+        * {
+            font-family: 'Instrument Sans', sans-serif;
+        }
+
+        .large-logo-text {
+            font-size: 20vw;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.1);
+
+            position: absolute;
+            bottom: -8%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .badge-left {
+            transform: rotate(-15deg);
+        }
+
+        .badge-right {
+            transform: rotate(15deg);
+        }
+
+        .hero-bg-div{
+            height: 110dvh;
+            z-index: -10;
+        } 
+
+        .handshake{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            z-index: 10;
+            position: absolute;
+            bottom: 0;
+            top: 20%;
+
+
+        }
+
+        .about-section {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            
+            background-image: url('/assests/img/Group\ 2429.png');
+            background-size: 1000px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        .card-bg {
+            background-color: #292929;
+        }
+
+        .text-gold {
+            color: #FFC000;
+        }
+
+
+        .app-section {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .text-gold {
+            color: #FFC000;
+        }
+
+        .phone-mockup-container{
+            position: relative;
+            width: 100%;
+        }
+           img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+  
+           }
+
+        /* Responsive adjustments for the image */
+        @media (max-width: 1024px) {
+            .phone-mockup-container {
+                position: relative;
+                margin: 4rem auto 0;
+                transform: rotate(0deg);
+                width: 100%;
+                max-width: 500px;
+                height: 400px;
+                bottom: 0;
+            }
+        }
+
+        .global-feature-section {
+            background-color: #f7b731;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .world-map-overlay {
+        background-image: url('./img/worldmap.png');
+            background-size: 1200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        /* General style for the floating avatars */
+        .floating-avatar {
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background-size: cover;
+            background-position: center;
+            z-index: 10;
+        }
+
+        .avatar-1 {
+            /* Top Left */
+            top: 15%;
+            left: 10%;
+            width: 70px;
+            height: 70px;
+
+        }
+
+        .avatar-2 {
+            /* Top Right */
+            top: 10%;
+            right: 10%;
+            width: 65px;
+            height: 65px;
+
+        }
+
+        .avatar-3 {
+            /* Bottom Left */
+            bottom: 15%;
+            left: 15%;
+            width: 55px;
+            height: 55px;
+  
+        }
+
+        .avatar-4 {
+            /* Bottom Center */
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .avatar-5 {
+            /* Bottom Right */
+            bottom: 10%;
+            right: 8%;
+            width: 80px;
+            height: 80px;
+        }
+
+
+        .card-light-bg {
+            background-color: #f2f2f2;
+        }
+        .card-dark-bg {
+            background-color: #1A1A1A; 
+        }
+
+        .check-icon {
+            color: #38A169;
+            font-size: 1.5rem;
+        }
+
+        .rounded-custom {
+            border-radius: 1.5rem; 
+        }
+
+        .faq-section {
+            background-color: #ffffff;
+            color: #1f2937;
+        }
+
+        .large-faq-text {
+            font-size: 150px;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.08);
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            line-height: 1;
+            z-index: 0;
+            user-select: none;
+        }
+
+        .dotted-arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 50px;
+            border-top: 3px dotted #FFC000;
+            border-radius: 0 50% 0 0;
+            transform: rotate(-10deg);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .text-gold {
+            color: #FFC000;
+        }
+
+        .answer-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .answer-content.open {
+            max-height: 300px;
+            padding-top: 0.75rem;
+        }
+
+        .arrow-icon {
+            transition: transform 0.3s ease-out;
+        }
+
+        .arrow-icon.rotated {
+            transform: rotate(90deg);
+        }
